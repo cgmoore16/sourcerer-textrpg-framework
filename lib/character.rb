@@ -5,6 +5,8 @@
 # Copyright (C) 2018 Sourcerer, All Rights Reserved.
 # Licensed under GPLv3.
 
+#Checking connection
+
 module LOTS
 
 ENEMY_KILLED = "KILLED"
@@ -13,7 +15,7 @@ HIT_CHANCE_MODIFIER = 5
 ATTACK_VALUE_MODIFIER = 1
 
 class Character
-  
+
   attr_accessor :name
   attr_accessor :health
   attr_accessor :mana
@@ -76,7 +78,7 @@ class Character
     end
     return true
   end
-	
+
   def move(args)
     direction = args[:direction]
     world = args[:world]
@@ -118,7 +120,7 @@ class Character
       return true
     end
   end
-  
+
 end
 
 end
